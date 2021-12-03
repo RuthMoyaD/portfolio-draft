@@ -1,0 +1,40 @@
+body{
+    background: #062925;
+    background-attachment: fixed;
+}
+
+.title{
+    color: #94f870;
+}
+
+.navbar a{
+    color: #94f870;
+}
+
+.navbar .btn{
+    color: #00A1AB;
+    border: solid 1px #94f870;
+    background: #062925;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/kal\ logo.png);
+}
+
+.jumbotron{
+    background: #062925;
+}
+
+.jumbotron h1{
+    color: #94f870;
+}
+
+.jumbotron h2{
+    color: #00A1AB;
+}
+
+.jumbotron p{
+    color: white;
+}
