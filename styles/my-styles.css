@@ -71,9 +71,16 @@ body{
 }
 
 .progress{
-    width: 30rem;
+    height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 20px;
+}
+
+.html,
+.css,
+.javascript,
+.bootstrap{
+    font-size: 40px;
 }
