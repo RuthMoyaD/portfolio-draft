@@ -69,3 +69,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.progress-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
