@@ -1,6 +1,18 @@
+:root{
+    --default-text: 'visby-medium';
+}
+
 body{
     background: #062925;
     background-attachment: fixed;
+    font-family: var(--default-text);
+}
+
+@font-face {
+    font-family: 'visby-medium';
+    src: url(../font/VisbyCF-Medium.woff2) format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 .title{
@@ -44,4 +56,16 @@ body{
 
 .jumbotron p{
     color: white;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.progress-container{
+    display: flex;
+    flex-direction: column;
 }
