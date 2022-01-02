@@ -5,6 +5,9 @@ body{
 
 .title{
     color: #94f870;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar a{
