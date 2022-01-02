@@ -11,6 +11,10 @@ body{
     color: #94f870;
 }
 
+.navbar-toggler-icon{
+    color: #94f870;
+}
+
 .navbar .btn{
     color: #00A1AB;
     border: solid 1px #94f870;
