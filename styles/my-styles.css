@@ -70,8 +70,10 @@ body{
     flex-direction: column;
 }
 
-.progress-block{
+.progress{
+    width: 30rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 20px;
 }
