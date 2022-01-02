@@ -84,3 +84,8 @@ body{
 .bootstrap{
     font-size: 40px;
 }
+
+.github,
+.linkedin{
+    font-size: 50px;
+}
