@@ -70,16 +70,19 @@ body{
     width: 40rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    padding-left: 40px;
 }
 
 .progress{
     height: 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 25rem;
     margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar{
+    height: 100%;
 }
 
 .html,
@@ -87,6 +90,7 @@ body{
 .javascript,
 .bootstrap{
     font-size: 40px;
+    padding-right: 25px;
 }
 
 .github,
