@@ -25,6 +25,60 @@ body{
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
+
+#btn-top{
+  font-size: 60px;
+  color: var(--secondary-color);
+  padding: 15px;
+  font-weight: 400;
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: translateY(0%);
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+#btn-top.show{
+  transform: translateY(0);
+}
+
+#btn-top.scrollFinal{
+  transform: translateY(-250%);
+}
+
+#btn-top span{
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-family: var(--default-text);
+  text-shadow: 3px 3px 3px var(--shadow-color);
+  transition: all 0.5s;
+}
+
+#btn-top:hover{
+  transition: all 0.5s;
+}
+
+#btn-top:hover span{
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 576px) {
+  #btn-top span{
+      font-size: 3vw;
+  } 
+}
+
 .animated-title {
   color: #00A1AB;
   font-family: Roboto, Arial, sans-serif;
