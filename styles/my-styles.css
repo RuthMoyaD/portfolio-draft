@@ -81,6 +81,7 @@ body{
 .header-background{
   background-image: url(../img/binary-background-for-hackathon-and-other-digital-events-fallen-zero-numbers-with-matrix-effect-on-futuristic-metaverse.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .animated-title {
