@@ -84,6 +84,14 @@ body{
   background-attachment: fixed;
 }
 
+.background-transition{
+  background-image: url(../img/binary-background-for-hackathon-and-other-digital-events-fallen-zero-numbers-with-matrix-effect-on-futuristic-metaverse.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
 .animated-title {
   color: #00A1AB;
   font-family: Roboto, Arial, sans-serif;
