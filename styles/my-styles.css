@@ -235,6 +235,10 @@ body{
     height: 100%;
 }
 
+.contact-container{
+  border: 3px solid #00A1AB;
+}
+
 .html,
 .css,
 .javascript,
@@ -245,5 +249,6 @@ body{
 
 .github,
 .linkedin{
-    font-size: 50px;
+    font-size: 80px;
+    margin: 50px;
 }
