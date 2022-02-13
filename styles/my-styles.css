@@ -3,8 +3,9 @@
 }
 
 body{
-    background: #062925;
+  background-image: url(../img/abstract-techno-background-with-connecting-lines.jpg);
     background-attachment: fixed;
+    background-size: cover;
     font-family: var(--default-text);
 }
 
@@ -82,10 +83,11 @@ body{
   background-image: url(../img/binary-background-for-hackathon-and-other-digital-events-fallen-zero-numbers-with-matrix-effect-on-futuristic-metaverse.jpg);
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
 }
 
 .background-transition{
-  background-image: url(../img/binary-background-for-hackathon-and-other-digital-events-fallen-zero-numbers-with-matrix-effect-on-futuristic-metaverse.jpg);
+  background-image: url(../img/abstract-techno-background-with-connecting-lines.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -117,7 +119,7 @@ body{
   display: block;
 }
 .animated-title > div.text-top {
-  border-bottom: 1vmin solid #000;
+  border-bottom: 0.5vmin solid rgb(253, 253, 253);
   top: 0;
 }
 .animated-title > div.text-top div {
@@ -168,22 +170,22 @@ body{
 .navbar .btn{
     color: #00A1AB;
     border: solid 1px #94f870;
-    background: #062925;
+    background: #071110;
     margin-left: 30px;
 }
 
 .logo{
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
     background-image: url(./img/kal\ logo.png);
-    margin: 25px 0 0 25px;
+    margin: 40px 0 0 40px;
     position: fixed;
     z-index: 99;
     cursor: pointer;
 }
 
 .carousel-inner{
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +193,7 @@ body{
 }
 
 .carousel-item{
-  margin: 100px;
+  margin: 20%;
   border: 2px solid #00A1AB;
 }
 
@@ -201,10 +203,17 @@ body{
 }
 
 .card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px;
+  align-items: center;
+  border: 2px solid #00A1AB;
+}
+
+.card{
+  background: #071110;
+  border: 2px solid #00A1AB;
 }
 
 .progress-container{
