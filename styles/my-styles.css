@@ -174,12 +174,12 @@ body{
 }
 
 .logo{ 
- width: 40px;
- height: 40px; 
+ width: 35px;
+ height: 35px; 
  position: fixed;
  z-index: 99;
  cursor: pointer;
- margin: 20px 0 0 20px;
+ margin: 15px 0 0 15px;
 }
 
 @media (min-width: 768px) {
@@ -270,10 +270,6 @@ body{
 }
 
 
-.d-block{
-  width: 50%;
-  height: 400px;
-}
 
 .card-container{
   display: flex;
