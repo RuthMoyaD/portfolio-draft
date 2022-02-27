@@ -98,9 +98,9 @@ body{
   color: #00A1AB;
   font-family: Roboto, Arial, sans-serif;
   height: 90vmin;
-  left: 50%;
+  left: 55%;
   position: absolute;
-  top: 50%;
+  top: 5%;
   transform: translate(-50%, -50%);
   width: 100vmin;
 }
@@ -111,7 +111,7 @@ body{
   width: 100%;
 }
 .animated-title > div div {
-  font-size: 10vmin;
+  font-size: 9vmin;
   padding: 2vmin 0;
   position: absolute;
 }
@@ -137,7 +137,7 @@ body{
 }
 .animated-title > div.text-bottom div {
   animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
@@ -160,7 +160,7 @@ body{
 .about,
 .contact{
 
-  margin: 10px;
+  margin: 1px;
 }
 
 .navbar-toggler-icon{
@@ -174,28 +174,102 @@ body{
     margin-left: 30px;
 }
 
-.logo{
-    width: 80px;
-    height: 80px;
-    background-image: url(./img/kal\ logo.png);
-    margin: 40px 0 0 40px;
-    position: fixed;
-    z-index: 99;
-    cursor: pointer;
+.logo{ 
+ width: 40px;
+ height: 40px; 
+ position: fixed;
+ z-index: 99;
+ cursor: pointer;
+ margin: 20px 0 0 20px;
 }
 
-.carousel-inner{
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 3px solid #00A1AB;
+@media (min-width: 768px) {
+  .logo {
+  width: 80px;
+  height: 80px;
+  margin: 40px 0 0 40px;
+  }
+  .animated-title {
+    color: #00A1AB;
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vmin;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vmin;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 10vmin;
+    padding: 2vmin 0;
+    position: absolute;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: 0.5vmin solid rgb(253, 253, 253);
+    top: 0;
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+  .animated-title > div.text-top div span:first-child {
+    color: #94f870;
+  }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }
+  
+  .title{
+      color: #94f870;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .navbar a{
+      color: #94f870;
+      font-size: 6vmin;
+  }
+  
+  .navbar a,
+  .projects,
+  .about,
+  .contact{
+  
+    margin: 10px;
+  }
+  
+  .navbar-toggler-icon{
+      color: #94f870;
+  }
+  
+  .navbar .btn{
+      color: #00A1AB;
+      border: solid 1px #94f870;
+      background: #071110;
+      margin-left: 30px;
+  }
 }
 
-.carousel-item{
-  margin: 20%;
-  border: 2px solid #00A1AB;
-}
 
 .d-block{
   width: 50%;
