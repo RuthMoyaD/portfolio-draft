@@ -152,7 +152,7 @@ body{
 
 .navbar a{
     color: #94f870;
-    font-size: 6vmin;
+    font-size: 5vmin;
 }
 
 .navbar a,
@@ -168,9 +168,8 @@ body{
 }
 
 .navbar .btn{
-    color: #00A1AB;
-    border: solid 1px #94f870;
-    background: #071110;
+    color: black;
+    background: transparent;
     margin-left: 30px;
 }
 
@@ -255,7 +254,7 @@ body{
   .about,
   .contact{
   
-    margin: 10px;
+    margin-top: 20px;
   }
   
   .navbar-toggler-icon{
@@ -323,6 +322,14 @@ body{
 
 .github,
 .linkedin{
+    font-size: 30px;
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .github,
+.linkedin{
     font-size: 80px;
     margin: 50px;
+}
 }
