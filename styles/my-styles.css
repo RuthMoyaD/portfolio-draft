@@ -269,7 +269,10 @@ body{
   }
 }
 
-
+.carousel-inner img{
+  max-height: 500px;
+  object-fit: contain;
+}
 
 .card-container{
   display: flex;
@@ -286,7 +289,6 @@ body{
 }
 
 .progress-container{
-    width: 40rem;
     display: flex;
     flex-direction: column;
     padding-left: 40px;
