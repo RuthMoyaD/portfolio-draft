@@ -275,17 +275,19 @@ body{
 }
 
 .card-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 50px;
-  align-items: center;
   border: 2px solid #00A1AB;
 }
 
 .card{
   background: #071110;
   border: 2px solid #00A1AB;
+}
+
+.container-aboutme{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .progress-container{
