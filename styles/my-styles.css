@@ -91,7 +91,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 50vh;
+  height: 40vh;
 }
 
 .animated-title {
@@ -148,6 +148,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 7vmin;
+    padding: 1rem;
 }
 
 .navbar a{
@@ -160,7 +162,7 @@ body{
 .about,
 .contact{
 
-  margin: 1px;
+  margin: 5px;
 }
 
 .navbar-toggler-icon{
@@ -238,10 +240,16 @@ body{
   }
   
   .title{
-      color: #94f870;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    color: #94f870;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    padding: 2rem;
+  }
+
+  @media (min-width: 768px) {
+
   }
   
   .navbar a{
@@ -281,24 +289,25 @@ body{
 .card{
   background: #071110;
   border: 2px solid #00A1AB;
+  margin-bottom: 1rem;
 }
 
 .container-aboutme{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .progress-container{
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
 }
 
 .progress{
     height: 3rem;
-    width: 25rem;
+    width: 15rem;
     margin: 20px;
     display: flex;
     align-items: center;
@@ -318,6 +327,55 @@ body{
 .bootstrap{
     font-size: 40px;
     padding-right: 25px;
+}
+
+@media (min-width: 768px) {
+  .card-container{
+    border: 2px solid #00A1AB;
+  }
+  
+  .card{
+    background: #071110;
+    border: 2px solid #00A1AB;
+    margin-right: 20px;
+  }
+  
+  .container-aboutme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+  
+  .progress-container{
+      display: flex;
+      flex-direction: column;
+      padding-left: 40px;
+  }
+  
+  .progress{
+      height: 3rem;
+      width: 25rem;
+      margin: 20px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .progress-bar{
+      height: 100%;
+  }
+  
+  .contact-container{
+    border: 3px solid #00A1AB;
+  }
+  
+  .html,
+  .css,
+  .javascript,
+  .bootstrap{
+      font-size: 40px;
+      padding-right: 25px;
+  }
 }
 
 .github,
