@@ -1,33 +1,49 @@
-:root{
-    --default-text: 'visby-medium';
+:root {
+  --default-text: 'visby-medium';
 }
 
-body{
+body {
   background-image: url(../img/abstract-techno-background-with-connecting-lines.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: var(--default-text);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: var(--default-text);
 }
 
 @font-face {
-    font-family: 'visby-medium';
-    src: url(../font/VisbyCF-Medium.woff2) format('truetype');
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'visby-medium';
+  src: url(../font/VisbyCF-Medium.woff2) format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 @keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
-@keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-#btn-top{
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#btn-top {
   font-size: 60px;
   color: var(--secondary-color);
   padding: 15px;
@@ -47,15 +63,15 @@ body{
   transition: all 0.5s;
 }
 
-#btn-top.show{
+#btn-top.show {
   transform: translateY(0);
 }
 
-#btn-top.scrollFinal{
+#btn-top.scrollFinal {
   transform: translateY(-250%);
 }
 
-#btn-top i{
+#btn-top i {
   color: #94f870;
   font-size: 25px;
   width: 100%;
@@ -65,33 +81,33 @@ body{
   transition: all 0.5s;
 }
 
-#btn-top:hover{
+#btn-top:hover {
   transition: all 0.5s;
 }
 
-#btn-top:hover span{
+#btn-top:hover span {
   transform: translateY(-3px);
 }
 
 @media screen and (max-width: 576px) {
-  #btn-top span{
-      font-size: 3vw;
-  } 
+  #btn-top span {
+    font-size: 3vw;
+  }
 }
 
-.header-background{
+.header-background {
   background-image: url(../img/binary-background-for-hackathon-and-other-digital-events-fallen-zero-numbers-with-matrix-effect-on-futuristic-metaverse.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
 }
 
-.background-transition{
+.background-transition {
   background-image: url(../img/abstract-techno-background-with-connecting-lines.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 40vh;
+  height: 10vh;
 }
 
 .animated-title {
@@ -104,38 +120,46 @@ body{
   transform: translate(-50%, -50%);
   width: 100vmin;
 }
-.animated-title > div {
+
+.animated-title>div {
   height: 50%;
   overflow: hidden;
   position: absolute;
   width: 100%;
 }
-.animated-title > div div {
+
+.animated-title>div div {
   font-size: 9vmin;
   padding: 2vmin 0;
   position: absolute;
 }
-.animated-title > div div span {
+
+.animated-title>div div span {
   display: flex;
 }
-.animated-title > div.text-top {
+
+.animated-title>div.text-top {
   border-bottom: 0.5vmin solid rgb(253, 253, 253);
   top: 0;
 }
-.animated-title > div.text-top div {
+
+.animated-title>div.text-top div {
   animation: showTopText 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
 }
-.animated-title > div.text-top div span:first-child {
+
+.animated-title>div.text-top div span:first-child {
   color: #94f870;
 }
-.animated-title > div.text-bottom {
+
+.animated-title>div.text-bottom {
   bottom: 0;
 }
-.animated-title > div.text-bottom div {
+
+.animated-title>div.text-bottom div {
   animation: showBottomText 0.5s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -143,58 +167,60 @@ body{
   transform: translate(0, -100%);
 }
 
-.title{
-    color: #94f870;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 7vmin;
-    padding: 1rem;
-}
-.navbar-nav{
-display: flex;
-flex-direction: row;
-margin-top: 15px;
+.title {
+  color: #94f870;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vmin;
+  padding: 1rem;
 }
 
-.navbar a{
-    color: #94f870;
-    font-size: 5vmin;
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.navbar a {
+  color: #94f870;
+  font-size: 5vmin;
 }
 
 .navbar a,
 .projects,
 .about,
-.contact{
+.contact {
   margin: 4px;
 }
 
-.navbar-toggler-icon{
-    color: #94f870;
+.navbar-toggler-icon {
+  color: #94f870;
 }
 
-.navbar .btn{
+.navbar .btn {
   color: #00A1AB;
   border: solid 1px #94f870;
   background: #071110;
   margin-left: 10px;
 }
 
-.logo{ 
- width: 35px;
- height: 35px; 
- position: fixed;
- z-index: 99;
- cursor: pointer;
- margin: 15px 0 0 15px;
+.logo {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  z-index: 99;
+  cursor: pointer;
+  margin: 15px 0 0 15px;
 }
 
 @media (min-width: 768px) {
   .logo {
-  width: 80px;
-  height: 80px;
-  margin: 40px 0 0 40px;
+    width: 80px;
+    height: 80px;
+    margin: 40px 0 0 40px;
   }
+
   .animated-title {
     color: #00A1AB;
     font-family: Roboto, Arial, sans-serif;
@@ -205,46 +231,54 @@ margin-top: 15px;
     transform: translate(-50%, -50%);
     width: 100vmin;
   }
-  .animated-title > div {
+
+  .animated-title>div {
     height: 50%;
     overflow: hidden;
     position: absolute;
     width: 100%;
   }
-  .animated-title > div div {
+
+  .animated-title>div div {
     font-size: 10vmin;
     padding: 2vmin 0;
     position: absolute;
   }
-  .animated-title > div div span {
+
+  .animated-title>div div span {
     display: block;
   }
-  .animated-title > div.text-top {
+
+  .animated-title>div.text-top {
     border-bottom: 0.5vmin solid rgb(253, 253, 253);
     top: 0;
   }
-  .animated-title > div.text-top div {
+
+  .animated-title>div.text-top div {
     animation: showTopText 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     bottom: 0;
     transform: translate(0, 100%);
   }
-  .animated-title > div.text-top div span:first-child {
+
+  .animated-title>div.text-top div span:first-child {
     color: #94f870;
   }
-  .animated-title > div.text-bottom {
+
+  .animated-title>div.text-bottom {
     bottom: 0;
   }
-  .animated-title > div.text-bottom div {
+
+  .animated-title>div.text-bottom div {
     animation: showBottomText 0.5s;
     animation-delay: 1.75s;
     animation-fill-mode: forwards;
     top: 0;
     transform: translate(0, -100%);
   }
-  
-  .title{
+
+  .title {
     color: #94f870;
     display: flex;
     justify-content: center;
@@ -253,52 +287,50 @@ margin-top: 15px;
     padding: 2rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) {}
 
+  .navbar a {
+    color: #94f870;
+    font-size: 6vmin;
   }
-  
-  .navbar a{
-      color: #94f870;
-      font-size: 6vmin;
-  }
-  
+
   .navbar a,
   .projects,
   .about,
-  .contact{
-  
+  .contact {
+
     margin-top: 20px;
   }
-  
-  .navbar-toggler-icon{
-      color: #94f870;
+
+  .navbar-toggler-icon {
+    color: #94f870;
   }
-  
-  .navbar .btn{
-      color: #00A1AB;
-      border: solid 1px #94f870;
-      background: #071110;
-      margin-left: 30px;
-      font-size: 3vmin;
+
+  .navbar .btn {
+    color: #00A1AB;
+    border: solid 1px #94f870;
+    background: #071110;
+    margin-left: 30px;
+    font-size: 3vmin;
   }
 }
 
-.carousel-inner img{
+.carousel-inner img {
   max-height: 500px;
   object-fit: contain;
 }
 
-.card-container{
+.card-container {
   border: 2px solid #00A1AB;
 }
 
-.card{
+.card {
   background: #071110;
   border: 2px solid #00A1AB;
   margin-bottom: 1rem;
 }
 
-.container-aboutme{
+.container-aboutme {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -306,95 +338,96 @@ margin-top: 15px;
   width: 100%;
 }
 
-.progress-container{
-    display: flex;
-    flex-direction: column;
+.progress-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.progress{
-    height: 3rem;
-    width: 15rem;
-    margin: 20px;
-    display: flex;
-    align-items: center;
+.progress {
+  height: 3rem;
+  width: 15rem;
+  margin: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.progress-bar{
-    height: 100%;
+.progress-bar {
+  height: 100%;
 }
 
-.contact-container{
+.contact-container {
   border: 3px solid #00A1AB;
 }
 
 .html,
 .css,
 .javascript,
-.bootstrap{
-    font-size: 40px;
-    padding-right: 25px;
+.bootstrap {
+  font-size: 40px;
+  padding-right: 25px;
 }
 
 @media (min-width: 768px) {
-  .card-container{
+  .card-container {
     border: 2px solid #00A1AB;
   }
-  
-  .card{
+
+  .card {
     background: #071110;
     border: 2px solid #00A1AB;
     margin-right: 20px;
   }
-  
-  .container-aboutme{
+
+  .container-aboutme {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     height: 80%;
   }
-  
-  .progress-container{
-      display: flex;
-      flex-direction: column;
-      padding-left: 40px;
+
+  .progress-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
   }
-  
-  .progress{
-      height: 3rem;
-      width: 25rem;
-      margin: 20px;
-      display: flex;
-      align-items: center;
+
+  .progress {
+    height: 3rem;
+    width: 25rem;
+    margin: 20px;
+    display: flex;
+    align-items: center;
   }
-  
-  .progress-bar{
-      height: 100%;
+
+  .progress-bar {
+    height: 100%;
   }
-  
-  .contact-container{
+
+  .contact-container {
     border: 3px solid #00A1AB;
   }
-  
+
   .html,
   .css,
   .javascript,
-  .bootstrap{
-      font-size: 40px;
-      padding-right: 25px;
+  .bootstrap {
+    font-size: 40px;
+    padding-right: 25px;
   }
 }
 
 .github,
-.linkedin{
-    font-size: 30px;
-    margin: 10px;
+.linkedin {
+  font-size: 30px;
+  margin: 10px;
 }
 
 @media (min-width: 768px) {
+
   .github,
-.linkedin{
+  .linkedin {
     font-size: 80px;
     margin: 50px;
-}
+  }
 }
